@@ -1,16 +1,17 @@
-#include <stdio.h>
+#include<stdio.h>
 
 main()
 {
-    int feet,n,m;
-    float centimeters,length;
-    printf("Enter the range of feet from which you want to start from:");
-    scanf("%d",&m);
-    printf("Enter the range till which you want:\n");
-    scanf("%d",&n);
-    for(feet=m;feet<=n;++feet)
-    {
+    int feet,m,n;
+    float length;
+    printf("Enter the Range:\n");
+    scanf("%d%d",&m,&n);
+    printf("_________________________________________________\n");
+    printf("The Feet -> Centimeter Conversion from %d to %d\n",m,n);
+    printf("_________________________________________________\n");
+    for(feet=m;feet<=n;feet++){
         length=feet*30.48;
-        printf("%dFeet -> %f Centimeter\n",feet,length);
+        printf("%d -> %f\n",feet,length);
     }
+    printf("_________________________________________________");
 }
